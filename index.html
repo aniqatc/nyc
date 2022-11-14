@@ -183,11 +183,11 @@
 					an itinerary that's filled with NYC's greatest hidden gems and the
 					must-see tourist destinations across the five boroughs.
 				</p>
-				<small>
-					All you need to do is contact us & we'll prepare your visit!</small
-				>
-				<h3 id="submission-incomplete"></h3>
+
 				<div class="tour-form">
+					<small>
+						All you need to do is contact us & we'll prepare your visit!</small
+					><br />
 					<label for="name"
 						>Name <input type="text" placeholder="John Doe" id="name"
 					/></label>
@@ -207,6 +207,7 @@
 					<br />
 
 					<button id="visit-btn">Schedule Your Visit</button>
+					<h3 id="submission-incomplete"></h3>
 				</div>
 				<h3 id="submission-complete"></h3>
 			</div>
@@ -226,31 +227,6 @@
 				>
 			</footer>
 		</section>
-		<script>
-			let confirmVisit = () => {
-				let nameInput = document.querySelector('#name').value;
-				let visitorNumber = document.querySelector('#guests').value;
-				let availableDate = document.querySelector('#date').value;
-				let submissionMsg = document.querySelector('#submission-complete');
-				let form = document.querySelector('.tour-form');
-				let incompleteForm = document.querySelector('#submission-incomplete');
-
-				if (
-					nameInput == false ||
-					visitorNumber == false ||
-					availableDate == false
-				) {
-					incompleteForm.textContent = `Sorry, you need to complete the form!`;
-					document.getElementById('.tour-form').reset();
-				} else {
-					form.remove();
-					submissionMsg.innerHTML = `<strong>Congrats</strong> ${nameInput} with ${visitorNumber} of guests! available on ${availableDate}`;
-					incompleteForm.textContent = '';
-				}
-			};
-
-			let scheduleVisit = document.querySelector('#visit-btn');
-			scheduleVisit.addEventListener('click', confirmVisit);
-		</script>
+		<script src="form.js"></script>
 	</body>
 </html>

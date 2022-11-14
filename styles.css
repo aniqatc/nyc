@@ -322,6 +322,30 @@ footer small {
 	border: 2px solid #af0000;
 }
 
+#visit-btn:active {
+	background: #af0000;
+}
+
+#submission-incomplete {
+	font-weight: 400;
+	font-size: 14px;
+	border-radius: 10px;
+	color: #cc0000;
+}
+
+#submission-complete {
+	font-weight: 500;
+	font-size: 14px;
+	border-radius: 10px;
+	color: #3d6709;
+	max-width: 330px;
+}
+
+h3 {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
 @media only screen and (max-width: 768px) {
 	.gallery-img img {
 		width: 300px;
