@@ -208,6 +208,7 @@
 
 					<button id="visit-btn">Schedule Your Visit</button>
 				</div>
+				<h3 id="submission-complete"></h3>
 			</div>
 			<footer>
 				<i class="fa-solid fa-code"></i>
@@ -230,7 +231,8 @@
 				let nameInput = document.querySelector('#name').value;
 				let visitorNumber = document.querySelector('#guests').value;
 				let availableDate = document.querySelector('#date').value;
-				let submissionMsg = document.querySelector('.tour-form');
+				let submissionMsg = document.querySelector('#submission-complete');
+				let form = document.querySelector('.tour-form');
 				let incompleteForm = document.querySelector('#submission-incomplete');
 
 				if (
@@ -241,6 +243,7 @@
 					incompleteForm.textContent = `Sorry, you need to complete the form!`;
 					document.getElementById('.tour-form').reset();
 				} else {
+					form.remove();
 					submissionMsg.innerHTML = `<strong>Congrats</strong> ${nameInput} with ${visitorNumber} of guests! available on ${availableDate}`;
 					incompleteForm.textContent = '';
 				}
