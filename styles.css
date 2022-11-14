@@ -259,6 +259,11 @@ input {
 	border-radius: 5px;
 }
 
+input[type='date'] {
+	font-family: 'Inter', sans-serif;
+	color: rgb(104, 104, 104);
+}
+
 footer {
 	border: 1px solid black;
 	font-weight: bold;
@@ -341,7 +346,7 @@ footer small {
 	}
 
 	h2 {
-		font-size: 72px;
+		font-size: 74px;
 	}
 }
 
@@ -378,7 +383,7 @@ footer small {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
 	.taste-gallery {
 		grid-template-columns: auto;
 	}
@@ -394,5 +399,8 @@ footer small {
 
 	.visit p {
 		font-size: 17px;
+	}
+	h2 {
+		font-size: 56px;
 	}
 }
