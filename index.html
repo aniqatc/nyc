@@ -15,18 +15,14 @@
 			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap"
 			rel="stylesheet"
 		/>
+		<script
+			src="https://kit.fontawesome.com/50cde61edc.js"
+			crossorigin="anonymous"
+		></script>
 		<link href="styles.css" rel="stylesheet" type="text/css" />
 		<title>Discover New York</title>
 	</head>
 	<body>
-		<!-- <section>
-			<div class="upper">
-				<h1 class="heading-one">New York City</h1>
-			</div>
-			<div class="lower">
-				<h1 class="heading-two">New York</h1>
-			</div>
-		</section> -->
 		<section class="ny-words">
 			<h1 class="word-cycle">New York Is</h1>
 		</section>
@@ -74,10 +70,10 @@
 				<div class="listing">
 					<img src="https://media.timeout.com/images/102811299/image.jpg" />
 					<p>
-						Broadway<br />
+						Broadway Shows<br />
 						<small
-							>Ranging from Phantom of the Opera, Lion King, Harry Potter & The
-							Cursed Child</small
+							>Phantom of the Opera, Lion King, Hamilton, Harry Potter & The
+							Cursed Child, The Book of Mormon, Beetlejuice</small
 						>
 					</p>
 				</div>
@@ -88,8 +84,8 @@
 					<p>
 						Live Comedy<br />
 						<small
-							>Ranging from Phantom of the Opera, Lion King, Harry Potter & The
-							Cursed Child</small
+							>The Famous Gotham Comedy Clup, Stand Up NY, Comic Strip Live,
+							Broadway Comedy Club, East Village Comedy</small
 						>
 					</p>
 				</div>
@@ -100,9 +96,9 @@
 					<p>
 						Cultural Show<br />
 						<small
-							>Ranging from Phantom of the Opera, Lion King, Harry Potter & The
-							Cursed Child</small
-						>
+							>Regular viewings of Latin American, Indian, East-Asian & African
+							cultural shows, festivals and parades
+						</small>
 					</p>
 				</div>
 				<div class="listing">
@@ -112,8 +108,8 @@
 					<p>
 						Concerts<br />
 						<small
-							>Ranging from Phantom of the Opera, Lion King, Harry Potter & The
-							Cursed Child</small
+							>Enjoy Live Music at Lincoln Center, Carnegie Hall, Radio City
+							Music Hall, Madison Square Garden and Barclays Center</small
 						>
 					</p>
 				</div>
@@ -124,8 +120,8 @@
 					<p>
 						Sports Games<br />
 						<small
-							>Ranging from Phantom of the Opera, Lion King, Harry Potter & The
-							Cursed Child</small
+							>See the New York Giants, New York Nets, New York Jets, New York
+							Knicks, New York Rangers in action</small
 						>
 					</p>
 				</div>
@@ -136,9 +132,9 @@
 					<p>
 						Museums<br />
 						<small
-							>Ranging from Phantom of the Opera, Lion King, Harry Potter & The
-							Cursed Child</small
-						>
+							>Museum of Modern Art, American Museum of Natural History,
+							Metropolitan Museum of Art, Museum of Sex and Guggenhein Museum
+						</small>
 					</p>
 				</div>
 				<div class="listing">
@@ -148,9 +144,10 @@
 					<p>
 						Ellis Island<br />
 						<small
-							>Ranging from Phantom of the Opera, Lion King, Harry Potter & The
-							Cursed Child</small
-						>
+							>Explore the history of Ellis Island through its architecture and
+							the Ellis Island Immigration Museum with a full view of the Statue
+							of Liberty
+						</small>
 					</p>
 				</div>
 			</div>
@@ -220,17 +217,48 @@
 				</p>
 			</div>
 		</section>
-		<section class="visit">
-			<h1>Visit</h1>
-			<div class="tour-form">
-				<label for="name"
-					>Name <input type="text" placeholder="John Doe" id="name"
-				/></label>
-				<label for="email"
-					>Email <input type="text" placeholder="john@email.com" id="email"
-				/></label>
-				<label for="date">Availability <input type="date" id="date" /></label>
+		<div class="visit">
+			<div class="full-form-wrapper">
+				<h2>Visit</h2>
+				<p>
+					Visit New York for a once-in-a-lifetime trip! We'll provide you with
+					an itinerary that's filled with NYC's greatest hidden gems and the
+					must-see tourist destinations across the five boroughs.
+					<br /><small>
+						All you need to do is contact us and we'll do the rest!
+					</small>
+				</p>
+				<div class="tour-form">
+					<label for="name"
+						>Name <input type="text" placeholder="John Doe" id="name"
+					/></label>
+					<label for="email"
+						>Email
+						<input type="text" placeholder="john@email.com" id="email" /></label
+					><br />
+					<label for="guests"
+						># of Guests <input type="number" id="guests" placeholder="3"
+					/></label>
+					<label for="date">Availability <input type="date" id="date" /></label>
+
+					<br />
+
+					<button id="visit-btn">Schedule Your Visit</button>
+				</div>
 			</div>
-		</section>
+			<footer>
+				<i class="fa-solid fa-code"></i>
+				Designed & Coded by
+				<strong><a href="https://aniqa.io" target="_blank">Aniqa</a> </strong>
+				<br />
+				<small
+					>New York City Native<br />
+					<a href="https://www.shecodes.io/graduates/60229-aniqa-chowdhury"
+						>SheCodes</a
+					>
+					Hometown Challenge</small
+				>
+			</footer>
+		</div>
 	</body>
 </html>
