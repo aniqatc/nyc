@@ -36,6 +36,10 @@ p {
 	margin: 0;
 }
 
+small {
+	font-size: 13px;
+}
+
 /* .upper,
 .lower {
 	height: 50vh;
@@ -204,10 +208,29 @@ p {
 }
 
 .listing {
-	padding: 20px 80px;
+	padding: 10px 30px;
 	border: 1px solid white;
 	border-radius: 10px;
 	margin: 15px;
+	display: flex;
+	align-items: center;
+	background: rgb(223, 223, 223);
+	color: black;
+	transition: all 200ms ease;
+}
+
+.listing img {
+	margin-right: 10px;
+	object-fit: cover;
+	width: 75px;
+	height: 75px;
+	border-radius: 15px;
+	box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.484);
+}
+
+.listing:hover {
+	background: #ffffff;
+	transform: scale(1.1);
 }
 
 .taste {
