@@ -62,7 +62,7 @@ small {
 }
 
 .word-cycle:after {
-	animation: word-cycle 8s ease infinite alternate;
+	animation: word-cycle 8s ease 1s infinite;
 	content: '';
 }
 
@@ -73,31 +73,31 @@ small {
 }
 
 @keyframes word-cycle {
-	0% {
+	12.5% {
 		content: ' Vibrant';
 		color: #af0000;
 	}
-	10% {
+	25% {
 		content: ' Evolving';
 		color: #b14102;
 	}
-	25% {
+	37.5% {
 		content: ' Colorful';
 		color: #a1941e;
 	}
-	40% {
+	50% {
 		content: ' Diverse';
 		color: #4f8906;
 	}
-	55% {
+	62.5% {
 		content: ' Busy';
 		color: #048f6e;
 	}
-	70% {
+	75% {
 		content: ' Lively';
 		color: #0643b8;
 	}
-	85% {
+	87.5% {
 		content: ' Inspiring';
 		color: #150674;
 	}
