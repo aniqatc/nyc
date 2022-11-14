@@ -257,12 +257,14 @@ input {
 	margin: 10px 5px;
 	border: 1px solid black;
 	border-radius: 5px;
-}
-
-input[type='date'] {
+	height: 16px;
 	font-family: 'Inter', sans-serif;
 	color: rgb(104, 104, 104);
-	height: 16px;
+}
+
+#mobile-date {
+	width: 100px;
+	display: none;
 }
 
 footer {
@@ -381,6 +383,14 @@ footer small {
 
 	.tour-form br {
 		display: none;
+	}
+
+	#date {
+		display: none;
+	}
+
+	#mobile-date {
+		display: inline-block;
 	}
 }
 
