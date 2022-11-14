@@ -262,6 +262,7 @@ input {
 input[type='date'] {
 	font-family: 'Inter', sans-serif;
 	color: rgb(104, 104, 104);
+	height: 16px;
 }
 
 footer {
