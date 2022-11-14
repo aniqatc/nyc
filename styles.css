@@ -26,6 +26,10 @@ h1 {
 h2 {
 	font-size: 92px;
 	transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
 }
 
 h2:hover {
@@ -111,6 +115,10 @@ footer small {
 	mix-blend-mode: difference;
 	padding-bottom: 25px;
 	animation: movement 6s ease;
+	-webkit-animation: movement 6s ease;
+	-ms-animation: movement 6s ease;
+	-moz-animation: movement 6s ease;
+	-o-animation: movement 6s ease;
 }
 
 @keyframes movement {
@@ -120,8 +128,12 @@ footer small {
 }
 
 .word-cycle:after {
-	animation: word-cycle 8s ease infinite alternate;
 	content: '';
+	animation: word-cycle 8s ease infinite alternate;
+	-webkit-animation: word-cycle 8s ease infinite alternate;
+	-ms-animation: word-cycle 8s ease infinite alternate;
+	-moz-animation: word-cycle 8s ease infinite alternate;
+	-o-animation: word-cycle 8s ease infinite alternate;
 }
 
 @keyframes word-cycle {
@@ -199,6 +211,10 @@ footer small {
 	height: 350px;
 	border-radius: 15px;
 	transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
 	filter: grayscale(0.9);
 }
 
@@ -235,7 +251,11 @@ footer small {
 	align-items: center;
 	background: rgb(223, 223, 223);
 	color: black;
-	transition: all 200ms ease;
+	transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
 }
 
 .listing img {
@@ -277,6 +297,10 @@ footer small {
 	height: 250px;
 	border-radius: 15px;
 	transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
 }
 
 .taste-img img:hover {
@@ -335,6 +359,10 @@ footer small {
 	background: black;
 	border: 2px solid black;
 	transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	-ms-transition: all 200ms ease-in-out;
+	-moz-transition: all 200ms ease-in-out;
+	-o-transition: all 200ms ease-in-out;
 	cursor: pointer;
 }
 
