@@ -1,3 +1,4 @@
+/* ELEMENT-SPECIFIC STYLING */
 body {
 	margin: 0;
 	font-family: 'Inter', sans-serif;
@@ -32,16 +33,67 @@ h2:hover {
 	color: #af0000;
 }
 
+h3 {
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
 p {
 	font-size: 20px;
 	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #af0000;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: black;
 }
 
 small {
 	font-size: 13px;
 }
 
-.ny-words {
+label,
+button {
+	font-family: 'Barlow Semi Condensed';
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+input {
+	padding: 10px;
+	margin: 10px 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+	height: 16px;
+	font-family: 'Inter', sans-serif;
+	color: rgb(104, 104, 104);
+}
+
+footer {
+	border: 1px solid black;
+	font-weight: bold;
+	margin: 100px auto 20px;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 0px 1px rgb(0, 0, 0);
+}
+
+footer i {
+	color: #af0000;
+}
+
+footer small {
+	font-weight: 400;
+	color: rgb(67, 67, 67);
+}
+
+/* HERO WORD ANIMATION */
+.hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -61,15 +113,15 @@ small {
 	animation: movement 6s ease;
 }
 
-.word-cycle:after {
-	animation: word-cycle 8s ease 1s infinite;
-	content: '';
-}
-
 @keyframes movement {
 	from {
 		transform: translateY(-55vh);
 	}
+}
+
+.word-cycle:after {
+	animation: word-cycle 8s ease infinite;
+	content: '';
 }
 
 @keyframes word-cycle {
@@ -107,14 +159,7 @@ small {
 	}
 }
 
-.discover {
-	background: black;
-	color: white;
-	display: flex;
-	flex-wrap: wrap-reverse;
-	justify-content: center;
-	padding-bottom: 40px;
-}
+/* HEADING STYLING */
 
 .discover-heading,
 .experience-heading,
@@ -126,6 +171,17 @@ small {
 	text-align: center;
 	max-width: 430px;
 	margin-bottom: 20px;
+}
+
+/* DISCOVER SECTION */
+
+.discover {
+	background: black;
+	color: white;
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	padding-bottom: 40px;
 }
 
 .discover-gallery {
@@ -151,6 +207,8 @@ small {
 	filter: grayscale(0);
 }
 
+/* EXPERIENCE SECTION */
+
 .experience {
 	background: black;
 	color: white;
@@ -162,6 +220,10 @@ small {
 
 .experience-heading {
 	margin-right: 50px;
+}
+
+.experience-listings {
+	margin: 5px 30px 40px;
 }
 
 .listing {
@@ -189,6 +251,8 @@ small {
 	background: #ffffff;
 	transform: scale(1.1);
 }
+
+/* TASTE SECTION */
 
 .taste {
 	background: black;
@@ -221,6 +285,8 @@ small {
 	border: 1px solid rgba(255, 255, 255, 0.77);
 }
 
+/* VISIT SECTION */
+
 .visit {
 	text-align: center;
 	display: flex;
@@ -233,6 +299,8 @@ small {
 	margin: 15px auto 20px auto;
 }
 
+/* FORM-SPECIFIC STYLING */
+
 .full-form-wrapper {
 	margin: 100px auto 0px;
 	padding: 10px 20px 20px;
@@ -241,62 +309,17 @@ small {
 	border: 1px solid black;
 }
 
+.tour-form {
+	margin-top: 15px;
+}
+
 .full-form-wrapper small {
 	color: rgb(110, 110, 110);
-}
-
-label,
-button {
-	font-family: 'Barlow Semi Condensed';
-	text-transform: uppercase;
-	font-weight: 600;
-}
-
-input {
-	padding: 10px;
-	margin: 10px 5px;
-	border: 1px solid black;
-	border-radius: 5px;
-	height: 16px;
-	font-family: 'Inter', sans-serif;
-	color: rgb(104, 104, 104);
 }
 
 #mobile-date {
 	width: 100px;
 	display: none;
-}
-
-footer {
-	border: 1px solid black;
-	font-weight: bold;
-	margin: 100px auto 20px;
-	padding: 10px 20px;
-	border-radius: 10px;
-	box-shadow: 2px 2px 0px 1px rgb(0, 0, 0);
-}
-
-footer i {
-	color: #af0000;
-}
-
-a {
-	text-decoration: none;
-	color: #af0000;
-}
-
-a:hover {
-	text-decoration: underline;
-	color: black;
-}
-
-footer small {
-	font-weight: 400;
-	color: rgb(67, 67, 67);
-}
-
-.tour-form {
-	margin-top: 15px;
 }
 
 #guests {
@@ -326,6 +349,7 @@ footer small {
 	background: #af0000;
 }
 
+/* SUBMISSION MESSAGES */
 #submission-incomplete {
 	font-weight: 400;
 	font-size: 14px;
@@ -341,19 +365,16 @@ footer small {
 	max-width: 330px;
 }
 
-h3 {
-	margin: 0 auto;
-	margin-top: 10px;
-}
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 768px) {
+	.experience-heading {
+		margin-right: 0;
+	}
+
 	.gallery-img img {
 		width: 300px;
 		height: 300px;
-	}
-
-	.experience-heading {
-		margin-right: 0;
 	}
 
 	.taste-gallery {
@@ -367,17 +388,21 @@ h3 {
 }
 
 @media only screen and (max-width: 660px) {
+	h2 {
+		font-size: 74px;
+	}
+
 	.gallery-img img {
 		width: 250px;
 		height: 250px;
 	}
-
-	h2 {
-		font-size: 74px;
-	}
 }
 
 @media only screen and (max-width: 550px) {
+	label {
+		display: block;
+	}
+
 	.discover-gallery {
 		grid-template-columns: auto;
 	}
@@ -396,15 +421,6 @@ h3 {
 		width: 280px;
 	}
 
-	.full-form-wrapper {
-		width: 300px;
-		padding: 10px 30px 40px;
-	}
-
-	label {
-		display: block;
-	}
-
 	.tour-form br {
 		display: none;
 	}
@@ -419,23 +435,25 @@ h3 {
 }
 
 @media only screen and (max-width: 420px) {
-	.taste-gallery {
-		grid-template-columns: auto;
+	h2 {
+		font-size: 56px;
 	}
 
 	.taste-gallery img {
 		width: 220px;
 		height: 220px;
 	}
+
+	.taste-gallery {
+		grid-template-columns: auto;
+	}
+
 	.full-form-wrapper {
-		width: 280px;
+		width: 80%;
 		padding: 10px 10px 20px;
 	}
 
 	.visit p {
 		font-size: 17px;
-	}
-	h2 {
-		font-size: 56px;
 	}
 }
