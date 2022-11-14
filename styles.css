@@ -137,6 +137,10 @@ footer small {
 }
 
 @keyframes word-cycle {
+	0% {
+		content: ' Ecclectic';
+		color: #d200b2;
+	}
 	12.5% {
 		content: ' Vibrant';
 		color: #af0000;
