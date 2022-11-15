@@ -111,7 +111,7 @@ footer small {
 .word-cycle {
 	color: white;
 	position: sticky;
-	top: 1%;
+	top: 20%;
 	mix-blend-mode: difference;
 	padding-bottom: 25px;
 	animation: movement 6s ease;
