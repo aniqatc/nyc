@@ -24,5 +24,4 @@ let scheduleVisit = document.querySelector("#visit-btn");
 scheduleVisit.addEventListener("click", confirmVisit);
 
 // Hover Function for Mobile
-let hoverElements = document.querySelector(".course-listing-container");
 document.addEventListener("touchstart", function () {}, true);
