@@ -10,6 +10,7 @@ Built in a single evening, the NYC landing page was meant to be some independent
 - Styled (including the date input) and built a functional form 
 - Mobile-responsive design
 - Various usages of grid and flexbox containers
+- Utilized CSS prefixes in order to allow browser support to animations & transitions
 
 # Preview
 # <a href="https://nyc.aniqa.dev" target="_blank"><img src="https://raw.githubusercontent.com/aniqatc/nyc/main/assets/nyc.gif" style="max-width: 100%;"></a>
