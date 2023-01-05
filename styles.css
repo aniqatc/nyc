@@ -1,7 +1,7 @@
 /* ELEMENT-SPECIFIC STYLING */
 body {
 	margin: 0;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 }
 
 section {
@@ -12,7 +12,7 @@ section {
 
 h1,
 h2 {
-	font-family: "Barlow Semi Condensed", sans-serif;
+	font-family: 'Barlow Semi Condensed', sans-serif;
 	margin: 0;
 	text-transform: uppercase;
 }
@@ -25,11 +25,11 @@ h1 {
 
 h2 {
 	font-size: 92px;
-	transition: all 200ms ease-in-out;
-	-webkit-transition: all 200ms ease-in-out;
 	-ms-transition: all 200ms ease-in-out;
 	-moz-transition: all 200ms ease-in-out;
 	-o-transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 h2:hover {
@@ -63,7 +63,7 @@ small {
 
 label,
 button {
-	font-family: "Barlow Semi Condensed";
+	font-family: 'Barlow Semi Condensed';
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -74,7 +74,7 @@ input {
 	border: 1px solid black;
 	border-radius: 5px;
 	height: 16px;
-	font-family: "Inter", sans-serif;
+	font-family: 'Inter', sans-serif;
 	color: rgb(104, 104, 104);
 }
 
@@ -114,11 +114,11 @@ footer small {
 	top: 20%;
 	mix-blend-mode: difference;
 	padding-bottom: 25px;
-	animation: movement 6s ease;
-	-webkit-animation: movement 6s ease;
 	-ms-animation: movement 6s ease;
 	-moz-animation: movement 6s ease;
 	-o-animation: movement 6s ease;
+	-webkit-animation: movement 6s ease;
+	animation: movement 6s ease;
 }
 
 @keyframes movement {
@@ -128,49 +128,49 @@ footer small {
 }
 
 .word-cycle:after {
-	content: "";
-	animation: word-cycle 8s ease infinite alternate;
-	-webkit-animation: word-cycle 8s ease infinite alternate;
+	content: '';
 	-ms-animation: word-cycle 8s ease infinite alternate;
 	-moz-animation: word-cycle 8s ease infinite alternate;
 	-o-animation: word-cycle 8s ease infinite alternate;
+	-webkit-animation: word-cycle 8s ease infinite alternate;
+	animation: word-cycle 8s ease infinite alternate;
 }
 
 @keyframes word-cycle {
 	0% {
-		content: " Ecclectic";
+		content: ' Ecclectic';
 		color: #d200b2;
 	}
 	12.5% {
-		content: " Vibrant";
+		content: ' Vibrant';
 		color: #af0000;
 	}
 	25% {
-		content: " Evolving";
+		content: ' Evolving';
 		color: #b14102;
 	}
 	37.5% {
-		content: " Colorful";
+		content: ' Colorful';
 		color: #a1941e;
 	}
 	50% {
-		content: " Diverse";
+		content: ' Diverse';
 		color: #4f8906;
 	}
 	62.5% {
-		content: " Busy";
+		content: ' Busy';
 		color: #048f6e;
 	}
 	75% {
-		content: " Lively";
+		content: ' Lively';
 		color: #0643b8;
 	}
 	87.5% {
-		content: " Inspiring";
+		content: ' Inspiring';
 		color: #150674;
 	}
 	100% {
-		content: " Exciting";
+		content: ' Exciting';
 		color: #6d0088;
 	}
 }
@@ -215,11 +215,11 @@ footer small {
 	width: 350px;
 	height: 350px;
 	border-radius: 15px;
-	transition: all 200ms ease-in;
-	-webkit-transition: all 200ms ease-in;
 	-ms-transition: all 200ms ease-in;
 	-moz-transition: all 200ms ease-in;
 	-o-transition: all 200ms ease-in;
+	-webkit-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
 	filter: grayscale(0.9);
 }
 
@@ -256,11 +256,11 @@ footer small {
 	align-items: center;
 	background: rgb(223, 223, 223);
 	color: black;
-	transition: all 200ms ease-in-out;
-	-webkit-transition: all 200ms ease-in-out;
 	-ms-transition: all 200ms ease-in-out;
 	-moz-transition: all 200ms ease-in-out;
 	-o-transition: all 200ms ease-in-out;
+	-webkit-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 .listing img {
@@ -301,11 +301,11 @@ footer small {
 	width: 250px;
 	height: 250px;
 	border-radius: 15px;
-	transition: all 200ms ease-in-out;
 	-webkit-transition: all 200ms ease-in-out;
 	-ms-transition: all 200ms ease-in-out;
 	-moz-transition: all 200ms ease-in-out;
 	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 }
 
 .taste-img img:hover {
@@ -363,11 +363,11 @@ footer small {
 	color: white;
 	background: black;
 	border: 2px solid black;
-	transition: all 200ms ease-in-out;
 	-webkit-transition: all 200ms ease-in-out;
 	-ms-transition: all 200ms ease-in-out;
 	-moz-transition: all 200ms ease-in-out;
 	-o-transition: all 200ms ease-in-out;
+	transition: all 200ms ease-in-out;
 	cursor: pointer;
 }
 
